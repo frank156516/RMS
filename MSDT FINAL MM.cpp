@@ -6,6 +6,7 @@
 #include<iostream>
 #include<assert.h>
 using namespace std;
+const MAX_DISHES=100;
 
 /*This programme is a RESTAURENT MANAGEMENT SYSTEM which manages all the operations of a real time
   restaurent. It handles all oprations like placing order , calculating the total bill , etc.
@@ -95,7 +96,7 @@ class dish  //Dishes in the Menu are handled here.
 class menu:public Introduction  //Main Menu class dealing with the dishes in the menu.
 {
 	int NumbofDishes;
-	dish Menu[100];
+	dish Menu[MAX_DISHES];
 	int repeat = 0;
     int Option;
     int MenuLength = 0;
